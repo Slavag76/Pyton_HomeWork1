@@ -14,19 +14,7 @@ bbb = enter_digit + enter_digit + enter_digit
 total_summ = int(enter_digit) + int(bb) + int(bbb)
 print(f"Сумма чисел {enter_digit} + {bb} + {bbb} равна: {total_summ}")
 
-enter_big = int(input("Введите целое натуральное число: "))
-# digit_10 = enter_big % 10
-# enter_big_10 = enter_big // 10
-#
-# digit_100 = enter_big_10 % 10
-# enter_big_100 = enter_big // 100
-#
-# digit_1000 = enter_big_100 % 10
-# enter_big_1000 = enter_big // 1000
-#
-# digit_10000 = enter_big_1000 % 10
-# enter_big_10000 = enter_big // 10000
-
+enter_big = int(input("Введите целое натуральное число (8 разрядов):  "))
 num = 0
 max = 0
 while num <= 8:
