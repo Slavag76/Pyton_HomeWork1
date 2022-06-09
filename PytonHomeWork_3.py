@@ -13,3 +13,10 @@ result = my_div(int(input("Введите первое число: ")), int(inpu
 print(f"Результат деления: {result}")
 
 
+# ********************************** 2 **************************************
+
+def person_data(**kwargs):
+    return kwargs
+
+print(person_data(second_name="Grozny", first_name="Viatcheslav", phone=7916555333, year_birth=1976, city="Moscow",
+                  email="myemal@mail.ru"))
