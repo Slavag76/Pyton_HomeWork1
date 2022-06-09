@@ -46,3 +46,24 @@ def my_func(var1, var2):
 
 result = my_func(int(input("Введите первое положительное число: ")), int(input("Введите второе отрицательное число: ")))
 print(f"Результат возведения в степень: {result}")
+
+
+# ********************************** 6 - 7 **************************************
+
+def myFunc_title(string):
+    string_split = string.split()
+    lenght = len(string_split)
+    num = 0
+
+    while num < lenght:
+        if string_split[num].istitle():
+            string_split[num] = string_split[num]
+        else:
+            string_split[num] = string_split[num].title()
+        num += 1
+
+    return string_split
+
+
+result_title = myFunc_title("Это предложение для Преобразования первой буквы")
+print(f"Преобразованный текст: {result_title}")
