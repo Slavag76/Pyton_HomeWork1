@@ -18,5 +18,20 @@ print(f"Результат деления: {result}")
 def person_data(**kwargs):
     return kwargs
 
+
 print(person_data(second_name="Grozny", first_name="Viatcheslav", phone=7916555333, year_birth=1976, city="Moscow",
                   email="myemal@mail.ru"))
+
+
+# ********************************** 3 **************************************
+
+def func_max(var1, var2, var3):
+    sum1 = var1 + var2
+    sum2 = var1 + var3
+    sum3 = var2 + var3
+    iter_obj = [sum1, sum2, sum3]
+    return max(iter_obj)
+
+
+result_func = func_max(-12, 9, 0)
+print(f"Максимальное значение суммы: {result_func}")
