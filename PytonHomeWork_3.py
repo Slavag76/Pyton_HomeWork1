@@ -35,3 +35,14 @@ def func_max(var1, var2, var3):
 
 result_func = func_max(-12, 9, 0)
 print(f"Максимальное значение суммы: {result_func}")
+
+
+# ********************************** 4 **************************************
+
+def my_func(var1, var2):
+    result = round((1 / var1 ** abs(var2)), 3)
+    return result
+
+
+result = my_func(int(input("Введите первое положительное число: ")), int(input("Введите второе отрицательное число: ")))
+print(f"Результат возведения в степень: {result}")
