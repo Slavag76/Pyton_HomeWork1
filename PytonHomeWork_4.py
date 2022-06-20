@@ -32,9 +32,22 @@ base_list = [randint(0, 30) for _ in range(50)]
 print(base_list)
 result_list = []
 
+# result_list = [result_list.append(item) for item in base_list if item not in result_list] - выдает None
+
 for item in base_list:
     if item not in result_list:
         result_list.append(item)
 
 print(result_list)
 
+# ******************************** 5 **********************************
+
+from functools import reduce
+
+
+def func_resultlist(el1, el2):
+    return el1 * el2
+
+
+base_list2 = [el for el in range(100, 1001, 2)]
+print(f"Произведение элементов: {reduce(func_resultlist, base_list2)}")
