@@ -51,3 +51,13 @@ def func_resultlist(el1, el2):
 
 base_list2 = [el for el in range(100, 1001, 2)]
 print(f"Произведение элементов: {reduce(func_resultlist, base_list2)}")
+
+# ******************************** 6 **********************************
+
+from itertools import count, cycle
+
+my_count = count(10)
+my_cycle = cycle("XOL")
+
+for _ in range(8):
+    print(next(my_count), next(my_cycle))
